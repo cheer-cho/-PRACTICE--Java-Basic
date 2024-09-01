@@ -122,19 +122,36 @@ public class Main {
 
         // ---------------------------------------- //
         // 6. If statement
-        Random random = new Random();
-        int age = random.nextInt(85) + 1;
+//        Random random = new Random();
+//        int age = random.nextInt(85) + 1;
+//
+//        System.out.println("Age: " + age);
+//
+//        if (age >= 75) {
+//            System.out.println("Okay Boomer!");
+//        } else if (age >= 18) {
+//            System.out.println("You are an adult!");
+//        } else if (age >= 13) {
+//            System.out.println("You are a teenager!");
+//        } else {
+//            System.out.println("You are NOT an adult!");
+//        }
 
-        System.out.println("Age: " + age);
+        // ---------------------------------------- //
+        // 7. Switch statement
+        String day = "Friday";
+        switch (day) {
+            case "Sunday":
+                System.out.println("This is Sunday!");
+                break;
 
-        if (age >= 75) {
-            System.out.println("Okay Boomer!");
-        } else if (age >= 18) {
-            System.out.println("You are an adult!");
-        } else if (age >= 13) {
-            System.out.println("You are a teenager!");
-        } else {
-            System.out.println("You are NOT an adult!");
+            case "Friday":
+                System.out.println("This is Friday!");
+                break;
+
+            case "Monday":
+                System.out.println("This is Monday!");
+                break;
         }
     }
 }
