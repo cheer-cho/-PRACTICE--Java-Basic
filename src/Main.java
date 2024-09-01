@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main (String[] args) {
         // variables
@@ -18,14 +20,30 @@ public class Main {
         String water = "Water";
         String k_aid = "Kool-Aid";
 
-//        water = k_aid;
-//        System.out.println("water: " + water);
-//        System.out.println("k_aid: " + k_aid);
+        // water = k_aid;
+        // System.out.println("water: " + water);
+        // System.out.println("k_aid: " + k_aid);
 
         String temp = water;
         water = k_aid;
         k_aid = temp;
         System.out.println("water: " + water);
         System.out.println("k_aid: " + k_aid);
+
+        // ---------------------------------------- //
+        // user input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+        String your_name = scanner.nextLine();
+        System.out.println("What is your age?");
+        int your_age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("What is your fav food?");
+        String your_fav_food = scanner.nextLine();
+
+        System.out.println("Hello " + your_name);
+        System.out.println("You are " + your_age + " years old");
+        System.out.println("You like " + your_fav_food);
     }
 }
