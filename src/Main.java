@@ -192,45 +192,93 @@ public class Main {
         // ---------------------------------------- //
         // 8. while loop & do-while
 
-        Scanner scanner = new Scanner(System.in);
-        String name_8 = "";
-
-        while(name_8.isBlank()) {
-            System.out.print("Enter your name: ");
-            name_8 = scanner.nextLine();
-        }
-        System.out.println("Your name is: " + name_8);
-
-        do {
-            System.out.print("Enter your name: ");
-            name_8 = scanner.nextLine();
-        } while(name_8.isBlank());
+//        Scanner scanner = new Scanner(System.in);
+//        String name_8 = "";
+//
+//        while(name_8.isBlank()) {
+//            System.out.print("Enter your name: ");
+//            name_8 = scanner.nextLine();
+//        }
+//        System.out.println("Your name is: " + name_8);
+//
+//        do {
+//            System.out.print("Enter your name: ");
+//            name_8 = scanner.nextLine();
+//        } while(name_8.isBlank());
 
         // ---------------------------------------- //
         // 9. for loop
-        for (int i = 0; i < 10; i += 1) {
-            System.out.println("Loop #" + (i + 1));
+//        for (int i = 0; i < 10; i += 1) {
+//            System.out.println("Loop #" + (i + 1));
+//        }
+
+        // ---------------------------------------- //
+        // 10. nested loops
+//        int rows;
+//        int columns;
+//        String symbol_2 = "";
+//
+//        System.out.println("Enter # of rows: ");
+//        rows = scanner.nextInt();
+//
+//        System.out.println("Enter # of columns ");
+//        columns = scanner.nextInt();
+//
+//        System.out.println("Enter symbol to use: ");
+//        symbol_2 = scanner.next();
+//
+//        for (int i = 1; i <= rows; i += 1) {
+//            System.out.println();
+//            for (int j = 1; j <= columns; j += 1) {
+//                System.out.print(symbol_2);
+//            }
+//        }
+
+        // ---------------------------------------- //
+        // 11. array
+
+        String [] cars = {"Camaro", "Corvette", "Tesla"};
+        cars[0] = "Mustang";
+        System.out.println(cars[2]);
+
+        String [] trucks = new String[3];
+        trucks[0] = "Tundra";
+        trucks[1] = "F-150";
+        trucks[2] = "Isuzu";
+
+        for(int i = 0; i < trucks.length; i += 1) {
+            System.out.println(trucks[i]);
         }
 
         // ---------------------------------------- //
-        // 9. nested loops
-        int rows;
-        int columns;
-        String symbol_2 = "";
+        // 12. 2D array
+        String [][] cars_2 = new String [3][3];
 
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
+        cars_2[0][0] = "Camaro";
+        cars_2[0][1] = "Corvette";
+        cars_2[0][2] = "Silverado";
+        cars_2[1][0] = "Mustang";
+        cars_2[1][1] = "Ranger";
+        cars_2[1][2] = "F-150";
+        cars_2[2][0] = "Ferrari";
+        cars_2[2][1] = "Lambo";
+        cars_2[2][2] = "Tesla";
 
-        System.out.println("Enter # of columns ");
-        columns = scanner.nextInt();
+        for (int i = 0; i < cars_2.length; i++) {
+            for (int j = 0; j < cars_2[i].length; j++) {
+                System.out.println(cars_2[i][j]);
+            }
+        }
 
-        System.out.println("Enter symbol to use: ");
-        symbol_2 = scanner.next();
+        String [][] cars_3 = {
+                {"Camaro", "Corvette", "Silverado"},
+                {"Mustang", "Ranger", "F-150"},
+                {"Ferrari", "Lambo", "Tesla"}
+        };
 
-        for (int i = 1; i <= rows; i += 1) {
-            System.out.println();
-            for (int j = 1; j <= columns; j += 1) {
-                System.out.print(symbol_2);
+        for (int i = 0; i < cars_3.length; i++) {
+            for (int j = 0; j < cars_3[i].length; j++) {
+                System.out.println(cars_3[i][j]);
             }
         }
     }
