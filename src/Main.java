@@ -161,32 +161,77 @@ public class Main {
         // || = (OR)
         // !  = (NOT)
 
-        Random random = new Random();
-        int temperature = random.nextInt(101);
+//        Random random = new Random();
+//        int temperature = random.nextInt(101);
+//
+//        System.out.println("Temp: " + temp);
+//
+//        if (temperature >= 40) {
+//            System.out.println("This is too hot outside");
+//        } else if (temperature >= 30 && temperature < 40) {
+//            System.out.println("It is hot outside");
+//        } else if (temperature >= 20 && temperature < 30) {
+//            System.out.println("It is chilling outside");
+//        } else {
+//            System.out.println("It is cold outside");
+//        }
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("You are playing the game! Press q or Q to quite");
+//        String response = scanner.next();
+//
+//        if (response.equals("q") || response.equals("Q")) {
+//            System.out.println("You quit the game");
+//        } else {
+//            System.out.println("You are still playing the game");
+//        }
+//
+//        scanner.close();
 
-        System.out.println("Temp: " + temp);
-
-        if (temperature >= 40) {
-            System.out.println("This is too hot outside");
-        } else if (temperature >= 30 && temperature < 40) {
-            System.out.println("It is hot outside");
-        } else if (temperature >= 20 && temperature < 30) {
-            System.out.println("It is chilling outside");
-        } else {
-            System.out.println("It is cold outside");
-        }
+        // ---------------------------------------- //
+        // 8. while loop & do-while
 
         Scanner scanner = new Scanner(System.in);
+        String name_8 = "";
 
-        System.out.println("You are playing the game! Press q or Q to quite");
-        String response = scanner.next();
+        while(name_8.isBlank()) {
+            System.out.print("Enter your name: ");
+            name_8 = scanner.nextLine();
+        }
+        System.out.println("Your name is: " + name_8);
 
-        if (response.equals("q") || response.equals("Q")) {
-            System.out.println("You quit the game");
-        } else {
-            System.out.println("You are still playing the game");
+        do {
+            System.out.print("Enter your name: ");
+            name_8 = scanner.nextLine();
+        } while(name_8.isBlank());
+
+        // ---------------------------------------- //
+        // 9. for loop
+        for (int i = 0; i < 10; i += 1) {
+            System.out.println("Loop #" + (i + 1));
         }
 
-        scanner.close();
+        // ---------------------------------------- //
+        // 9. nested loops
+        int rows;
+        int columns;
+        String symbol_2 = "";
+
+        System.out.println("Enter # of rows: ");
+        rows = scanner.nextInt();
+
+        System.out.println("Enter # of columns ");
+        columns = scanner.nextInt();
+
+        System.out.println("Enter symbol to use: ");
+        symbol_2 = scanner.next();
+
+        for (int i = 1; i <= rows; i += 1) {
+            System.out.println();
+            for (int j = 1; j <= columns; j += 1) {
+                System.out.print(symbol_2);
+            }
+        }
     }
 }
