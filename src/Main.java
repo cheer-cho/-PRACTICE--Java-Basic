@@ -34,6 +34,7 @@ public class Main {
         // user input
         Scanner scanner = new Scanner(System.in);
 
+        /*
         System.out.println("What is your name?");
         String your_name = scanner.nextLine();
         System.out.println("What is your age?");
@@ -45,5 +46,15 @@ public class Main {
         System.out.println("Hello " + your_name);
         System.out.println("You are " + your_age + " years old");
         System.out.println("You like " + your_fav_food);
+         */
+
+        // ---------------------------------------- //
+        // expression
+        // operands = values, variables, numbers, quantity
+        // operators = + - * / %
+
+        double friends = 10;
+        friends = (double) friends % 3;
+        System.out.println(friends);
     }
 }
