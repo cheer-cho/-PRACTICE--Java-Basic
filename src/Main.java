@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -74,7 +75,9 @@ public class Main {
 
         // ---------------------------------------- //
         // 5. Math class
+        /*
         double pi = 3.14;
+
         double dummy = -10;
 
         double max = Math.max(pi, dummy);
@@ -100,5 +103,19 @@ public class Main {
         System.out.println(a_z);
 
         scanner.close();
+         */
+
+        // ---------------------------------------- //
+        // 5. Random numbers
+        Random random = new Random();
+
+        int num_1 = random.nextInt(10) + 1; // 1 - 10;
+        System.out.println(num_1);
+
+        double num_2 = random.nextDouble(); // 1 - 10;
+        System.out.println(num_2);
+
+        boolean bool_1 = random.nextBoolean();
+        System.out.println(bool_1);
     }
 }
