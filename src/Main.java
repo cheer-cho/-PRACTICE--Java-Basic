@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 public class Main {
@@ -56,5 +57,16 @@ public class Main {
         double friends = 10;
         friends = (double) friends % 3;
         System.out.println(friends);
+
+        // ---------------------------------------- //
+        // GUI
+        String a_name = JOptionPane.showInputDialog("Enter your name");
+        JOptionPane.showMessageDialog(null, "Hello " + a_name);
+
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter age name"));
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
+
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
     }
 }
