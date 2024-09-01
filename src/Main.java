@@ -33,7 +33,7 @@ public class Main {
 
         // ---------------------------------------- //
         // user input
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
         /*
         System.out.println("What is your name?");
@@ -47,6 +47,7 @@ public class Main {
         System.out.println("Hello " + your_name);
         System.out.println("You are " + your_age + " years old");
         System.out.println("You like " + your_fav_food);
+        scanner.close();
          */
 
         // ---------------------------------------- //
@@ -60,6 +61,7 @@ public class Main {
 
         // ---------------------------------------- //
         // GUI
+        /*
         String a_name = JOptionPane.showInputDialog("Enter your name");
         JOptionPane.showMessageDialog(null, "Hello " + a_name);
 
@@ -68,5 +70,35 @@ public class Main {
 
         double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
         JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
+         */
+
+        // ---------------------------------------- //
+        // 5. Math class
+        double pi = 3.14;
+        double dummy = -10;
+
+        double max = Math.max(pi, dummy);
+        System.out.println(max);
+
+        double abs = Math.abs(dummy);
+        System.out.println(abs);
+
+        double rounded = Math.round(pi);
+        System.out.println(rounded);
+
+        Scanner scanner = new Scanner(System.in);
+
+        double a_x, a_y, a_z;
+
+        System.out.println("Enter side x: ");
+        a_x = scanner.nextDouble();
+
+        System.out.println("Enter side y: ");
+        a_y = scanner.nextDouble();
+
+        a_z = Math.sqrt(Math.pow(a_x, 2) + Math.pow(a_y, 2));
+        System.out.println(a_z);
+
+        scanner.close();
     }
 }
