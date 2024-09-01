@@ -139,19 +139,54 @@ public class Main {
 
         // ---------------------------------------- //
         // 7. Switch statement
-        String day = "Friday";
-        switch (day) {
-            case "Sunday":
-                System.out.println("This is Sunday!");
-                break;
+//        String day = "Friday";
+//        switch (day) {
+//            case "Sunday":
+//                System.out.println("This is Sunday!");
+//                break;
+//
+//            case "Friday":
+//                System.out.println("This is Friday!");
+//                break;
+//
+//            case "Monday":
+//                System.out.println("This is Monday!");
+//                break;
+//        }
 
-            case "Friday":
-                System.out.println("This is Friday!");
-                break;
+        // ---------------------------------------- //
+        // 8. logical operators
 
-            case "Monday":
-                System.out.println("This is Monday!");
-                break;
+        // && = (AND)
+        // || = (OR)
+        // !  = (NOT)
+
+        Random random = new Random();
+        int temperature = random.nextInt(101);
+
+        System.out.println("Temp: " + temp);
+
+        if (temperature >= 40) {
+            System.out.println("This is too hot outside");
+        } else if (temperature >= 30 && temperature < 40) {
+            System.out.println("It is hot outside");
+        } else if (temperature >= 20 && temperature < 30) {
+            System.out.println("It is chilling outside");
+        } else {
+            System.out.println("It is cold outside");
         }
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("You are playing the game! Press q or Q to quite");
+        String response = scanner.next();
+
+        if (response.equals("q") || response.equals("Q")) {
+            System.out.println("You quit the game");
+        } else {
+            System.out.println("You are still playing the game");
+        }
+
+        scanner.close();
     }
 }
