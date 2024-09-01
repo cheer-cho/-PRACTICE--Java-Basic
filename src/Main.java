@@ -107,6 +107,7 @@ public class Main {
 
         // ---------------------------------------- //
         // 5. Random numbers
+        /*
         Random random = new Random();
 
         int num_1 = random.nextInt(10) + 1; // 1 - 10;
@@ -117,5 +118,23 @@ public class Main {
 
         boolean bool_1 = random.nextBoolean();
         System.out.println(bool_1);
+        */
+
+        // ---------------------------------------- //
+        // 6. If statement
+        Random random = new Random();
+        int age = random.nextInt(85) + 1;
+
+        System.out.println("Age: " + age);
+
+        if (age >= 75) {
+            System.out.println("Okay Boomer!");
+        } else if (age >= 18) {
+            System.out.println("You are an adult!");
+        } else if (age >= 13) {
+            System.out.println("You are a teenager!");
+        } else {
+            System.out.println("You are NOT an adult!");
+        }
     }
 }
